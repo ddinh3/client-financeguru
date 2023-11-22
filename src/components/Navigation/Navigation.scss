@@ -1,0 +1,29 @@
+.navigation {
+    padding: 2rem 1.5rem;
+    width: 374px;
+    height: 50vh;
+    background: #F4BF96;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    border: #BA704F solid 3px;
+    .navigation-Container{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+}
+}
+.navigation-Items {
+    color:white;
+    // border:black solid 3px;
+    li{
+        // border: red solid 1px;
+        margin: 3rem;
+        font-weight: 400;
+        position:relative;
+    }
+}

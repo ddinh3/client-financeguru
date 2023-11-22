@@ -1,0 +1,43 @@
+.hero-data {
+  display: flex;
+}
+
+.maindata {
+  padding: 2rem 1.5rem;
+  width: 375vw;
+  height: 50vh;
+  background: #F4BF96;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  border: #BA704F 2px solid;
+}
+
+.maindata-income-h {
+  color: green;
+}
+
+.maindata-income-hp {
+  color: green;
+  font-size: xx-large;
+}
+
+.maindata-Spendings-h {
+  color: red;
+}
+
+.maindata-Spendings-hp {
+  color: red;
+  font-size: xx-large;
+}
+
+.maindata-balance-h {
+  color: black;
+}
+
+.maindata-balance-hp {
+  color: #CE5A67;
+  font-size: xx-large;
+}

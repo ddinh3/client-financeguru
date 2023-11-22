@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header'
+import MainData from './components/MainData/MainData';
+import Navigation from './components/Navigation/Navigation';
+import React, {useState} from 'react';
+import Income from './components/Income/Income';
+import Spendings from './components/Spendings/Spendings';
+import { useGlobalContext } from './context/globalContext';
+
 
 function App() {
+  const [active, setActive] = React.useState(1);
+
+  const globalContext = useGlobalContext();
+  console.log(globalContext);
+
+  const displayData = () => {
+    switch (active) {
+      case 1:
+        return <MainData />;
+      case 2:
+        return <Income />;
+      case 3:
+        return <Spendings />;
+      default:
+        return <MainData />;
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="hero-data">
+        <Navigation active={active} setActive={setActive} />
+        {displayData()}
+      </div>
     </div>
   );
 }

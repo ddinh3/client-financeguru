@@ -1,0 +1,24 @@
+.income-container {
+    display: flex;
+    padding: 2rem 1.5rem;
+    width: 370vw;
+    height: 100%;
+    background: #F4BF96;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border: #BA704F solid 2px;
+}
+
+
+
+.income-form {
+    display: flex;
+    overflow: auto;
+}
+
+.income-added-up-green {
+    color: green;
+}
