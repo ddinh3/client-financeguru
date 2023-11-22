@@ -37,3 +37,7 @@ how much
 date
 and source(e.g fastfood,bills,rent)
 and a note. 
+
+
+lessons : 
+I shouldve used mySQL alot of times i was trying to make the backend work with MongoDB and i had no knowledge so i had to learn it myself in the time frame. 
